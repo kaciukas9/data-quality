@@ -37,6 +37,7 @@ jobs:
           command: |
             sudo cp ./scripts/init/odbcinst.ini /etc
             cat /etc/odbcinst.ini
+            cat /etc/odbc.ini
 
       - run:
           name: Install Python environment
