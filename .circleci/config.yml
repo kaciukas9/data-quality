@@ -36,8 +36,13 @@ jobs:
           name: Move ODBC configuration file
           command: |
             sudo cp ./scripts/init/odbcinst.ini /etc
+            echo "/etc/odbcinst.ini"
             cat /etc/odbcinst.ini
-            cat /etc/odbc.ini
+            echo "/etc/odbc.ini"
+            echo "/usr/local/etc/odbcinst.ini"
+            cat /usr/local/etc/odbcinst.ini
+            echo "/usr/local/etc/odbc.ini"
+            cat /usr/local/etc/odbc.ini
 
       - run:
           name: Install Python environment
