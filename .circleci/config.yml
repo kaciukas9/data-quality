@@ -36,6 +36,7 @@ jobs:
           name: Move ODBC configuration file
           command: |
             sudo cp ./scripts/init/odbcinst.ini /etc
+            sudo cp ./scripts/init/odbcinst.ini /usr/local/etc/
             echo "/etc/odbcinst.ini"
             cat /etc/odbcinst.ini
             echo "/etc/odbc.ini"
