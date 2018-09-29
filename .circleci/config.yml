@@ -89,8 +89,8 @@ jobs:
           name: Install Python dependencies
           command: |
             sudo pip3 install --upgrade pip
-            sudo pip3 install pyodbc
-            sudo pip3 install nose2
+            sudo pip3 install pyodbc --ignore-installed six
+            sudo pip3 install nose2 --ignore-installed six
             sudo pip3 list
 
       - run:
